@@ -61,6 +61,7 @@ void squarecat(float x, float y,float z){
   fill(255,255,255);
   circle(x+z/4,y+z*3/10,z*4/15);
   circle(x+z*3/4,y+z*3/10,z*4/15);
+  strokeWeight(3);
   line(x,y,x+z/4,y-z/3);
   line(x+z/4,y-z/3,x+z/2,y);
   line(x+z/2,y,x+z*3/4,y-z/3);
