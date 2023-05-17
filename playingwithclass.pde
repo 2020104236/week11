@@ -157,8 +157,8 @@ void setup(){
   size(1600,900);
   a=new keymoving(300,400,200);
   b=new mousemoving(200,100,300);
-  c=new justmoving[9];
-  for(int i=0; i<9; i++) c[i]=new justmoving(100*i,100*i,100);
+  c=new justmoving[10];
+  for(int i=0; i<10; i++) c[i]=new justmoving(100*i,100*i,100);
 }
 void draw(){
   background(150,255,160);
@@ -167,7 +167,9 @@ void draw(){
   for(int i=0; i<3; i++){
     c[i].wallmove(i+1);
     c[i+3].collidemove(i+1);
-    c[i+6].wallmove(i+1);
   }
-  
+  for(int i=0; i<2; i++){
+    c[i+6].wallmove(i+1);
+    c[i+8].collidemove(i+1);
+  }
 }
